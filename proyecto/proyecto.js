@@ -1,8 +1,8 @@
 //hay dos porque el 4 me salia que es un numero primo y no lo es asi que hice varias pruebas porque me parecia muy raro y busacando me di cuenta de que era tipo como una excepcion tal vez.
 /*function primo(numero) {
   //console.log(numero);
-  for (let i = 2; i < numero / 2; i++) {
-    if (numero % i === 0 && numero / i !== 1) {
+  for (let i = 2; i <= numero / 2; i++) {
+    if (numero % i === 0 ) {
       return "no es primo";
     }
   }
@@ -12,7 +12,7 @@ console.log(primo(4));
 
 function primo2(numero) {
   let primo = true;
-  for (let i = 2; i < numero / 2; i++) {
+  for (let i = 2; i < numero / 2 + 1; i++) {
     if (numero % i === 0) {
       primo = false;
     }
@@ -24,10 +24,16 @@ function primo2(numero) {
   }
 }
 console.log(primo2(4));*/
-
+ 
+//correcion profe julio
 /*function ecuacion_cuadratica(params) {
-  
-}*/
+ const x = (-b + Math.sqrt(Math.pow(b,2)-(4*a*c))) / 2*a;
+ 
+ const resultado = a*Math.pow(x,2) + b*x +c;
+
+ console.log(resultado)
+}
+ecuacion_cuadratica(2,3,4);*/
 
 /*function unoAlCien(numero) {
   for (let i = 1; i <= numero; i++) {
@@ -81,7 +87,7 @@ unoAlCien(100);*/
 }
 unoAlCien(100);*/
 
-//intento de hcaer el 5
+//intento de hacer el 5
 /*
 let lista = [];
 function unoAlCien() {
@@ -96,3 +102,15 @@ function unoAlCien() {
   }
   console.log(lista)
 }*/
+
+//solucion profe julio
+/*function correcion() {
+  for (let i = 1; i <= 100; i+=10) {
+    let linea = '' ;
+    for (let j = i; j < i +10; j++) {
+      linea += ` ${j} `;
+    }
+    console.log(linea)
+  }
+}
+correcion()*/
